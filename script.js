@@ -46,14 +46,7 @@ async function fetchMovieDetails(titles) {
 
 // Function to prompt the AI with the user's query
 async function promptAI(query) {
-  // Fetch the key from an external source
-  const response = await fetch("https://green-cat.static.domains/");
-  const html = await response.text();
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, "text/html");
-  const apiKey = doc.querySelector("#api-key").textContent.trim();
-
-  const KEY = apiKey;
+  const KEY = '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'
   try {
     const response = await fetch(
       "https://api.groq.com/openai/v1/chat/completions",
