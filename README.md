@@ -21,5 +21,4 @@ Press "Enter"
 
 View the AI’s guesses, along with movie details fetched from the API.
 
-# 🌐 Live Demo
-https://ethangreatorex.github.io/AIMovieFinder/
+
