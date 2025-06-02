@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+html{
+    height: 100%; /* Full height of the document */
+    background: rgb(19, 19, 19);
+    background-image: radial-gradient(rgb(177, 177, 177) 5%, transparent 0%);
+    background-size: 60px 60px;
+    background-repeat: repeat;
+}
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: center;
+    border: 0.3rem solid rgb(35, 35, 35);
+    border-radius: 50%;
+    align-items: center;
+    width: 35%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 1;
+    transition: all 0.5s ease;
+}
+
+.container.square{
+    border-radius: 5%;
+    width: 80%;
+    max-width: 600px;
+    height: 70%;
+}
+
+/* Styling for the initial search button display */
+.start-search-box {
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
+    border: 0.3rem solid rgb(255, 162, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%; 
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.search-icon-container {
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    aspect-ratio: 1; 
+}
+
+.search-icon-container img {
+    width: 70%; 
+    height: auto;
+}
+
+.search-input{
+    font-family: 'IBM Plex Mono', monospace;
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 162, 41);
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;
+    text-wrap: wrap;
+}
+
+.movie-display{
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 162, 41);
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 162, 41) transparent;
+}
+
+.movie-display img{
+    width: 30%;
+}
+
+.movie-display span{
+    color: white;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-controls button{
+    position: absolute;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 162, 41);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add responsiveness */
+
+@media (max-width: 950px) {
+    .right-arrow{
+        left: 67%;
+        top: 40%;
+    }
+
+    .left-arrow{
+        left: 32%;
+        top: 40%;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .start-search-box {
+        width: 80%;
+    }
+
+    .search-icon-container {
+        width: 90%;
+    }
+
+    .container.square {
+        max-width: 90%;
+    }
+}
