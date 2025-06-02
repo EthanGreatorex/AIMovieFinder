@@ -1,6 +1,6 @@
 # 🎥 AIMovieFinder
 
-Welcome to AIMovieFinde!
+Welcome to AIMovieFinder!
 
 Do you ever struggle to find the name of that movie your looking for? Or do you want to explore suggestions for a certain genre? <br>
 Using this website AI can do the hard work for you!
