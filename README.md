@@ -22,9 +22,11 @@ Press "Enter"
 View the AI’s guesses, along with movie details fetched from the API.
 
 # Images
-![image](https://github.com/user-attachments/assets/6f0b4bff-9013-4ed0-8eda-c8258f1f73df)
-
 
 ![image](https://github.com/user-attachments/assets/eab21ad5-beb9-4d09-86e2-6244ce315148)
+
+![image](https://github.com/user-attachments/assets/f109de8f-eca6-4e17-af3e-3cb849dd5a2a)
+
+![image](https://github.com/user-attachments/assets/b33d2727-aae2-45b7-a717-bd56527d710b)
 
 
